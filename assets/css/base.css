@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { 
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+h6 { font-size: 1rem; }
+
+p {
+    margin-top: 0;
+    margin-bottom: 0.9rem;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+    color: #c36;
+    transition: all 0.3s;
+}
+
+a:active,
+a:hover {
+    color: #336;
+}
+
+img {
+    border-style: none;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.outside {
+    display: flex;
+    justify-content: center;
+}
+
+.site-header .header-inner,
+.site-footer,
+.page-content {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.page-content {
+    width: 1280px;
+}
+
+@media (min-width: 576px) {
+    .site-header .header-inner,
+    .site-footer,
+    .page-content {
+        max-width: 540px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .site-header .header-inner,
+    .site-footer,
+    .page-content {
+        max-width: 720px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .site-header .header-inner,
+    .site-footer,
+    .page-content {
+        max-width: 960px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .site-header .header-inner,
+    .site-footer,
+    .page-content {
+        max-width: 1140px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+.site-header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.site-header .header-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+}
+
+.header-inner {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.site-header .site-title a {
+    font-size: 30px;
+    letter-spacing: -2.50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+}
+
+.site-header .site-title a:hover {
+    color: #000;
+}
+
+.site-navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.site-navigation li {
+    display: inline-block;
+}
+
+.site-navigation a {
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 23px;
+    transition: color 0.3s;
+}
+
+.site-navigation a:hover {
+    color: #c36;
+}
+
+.page-content {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    grid-template-columns: 25.253% 30.035% 44.376%;
+    display: grid;
+    gap: 0;
+}
+
+.projects-menu,
+.project-description,
+.gallery {
+    padding: 10px;
+}
+
+@media (max-width: 575px) {
+    .site-header .header-inner,
+    .site-footer,
+    .page-content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (min-width: 576px) {
+    .site-header .header-inner,
+    .site-footer,
+    .page-content {
+        margin: 0px;
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.projects-menu {
+    margin-left: 150px;
+}
+
+.projects-menu h5 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.projects-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.projects-menu li {
+    line-height: 23px;
+    margin-bottom: 0px;
+}
+
+.projects-menu a {
+    text-decoration: none;
+    color: #666;
+    font-size: 100%;
+    font-weight: 400;
+    line-height: 23px;
+    transition: color 0.3s;
+}
+
+.projects-menu a:hover {
+    color: #c36;
+}
+
+.project-description {
+    text-align: justify;
+    color: #1c1d1e;
+    font-size: 12.75px;
+    font-weight: 300;
+    line-height: 18.2167px;
+}
+
+.project-description p {
+    margin-bottom: 1rem;
+}
+
+.project-description strong,
+.project-description b {
+    font-weight: 700;
+}
+
+.gallery {
+    margin: 5px 45px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.site-footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-top: 1px solid #eee;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.site-footer .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-footer .copyright p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .site-footer {
+        margin-top: 40px;
+    }
+}
+
+.alignright {
+    float: right;
+    margin-left: 1rem;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 1rem;
+}
+
+.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+}
+
+@media (max-width: 768px) {
+    .site-header .site-title a {
+        font-size: 24px;
+        letter-spacing: -2.5px;
+    }
+
+    .site-header .header-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+        margin-left: 150px;
+        margin-right: 45px;
+    }
+
+    .site-navigation {
+        margin-left: 0;
+    }
+
+    .site-navigation ul {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .site-navigation ul {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+
+    .site-navigation a {
+        padding: 5px 10px;
+    }
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}

@@ -1,0 +1,36 @@
+baseURL: https://www.patrykjanota.pl/
+languageCode: pl-PL
+title: Patryk Janota
+
+params:
+  description: portfolio of photography projects
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+menu:
+  main:
+    - name: O mnie
+      url: /omnie/
+      weight: 1
+    - name: Kontakt
+      url: /kontakt/
+      weight: 2
+  projects:
+    - name: 5 sekund
+      url: /projekty/5-sekund/
+      weight: 1
+    - name: Biała Kartka
+      url: /projekty/inwersja/
+      weight: 2
+    - name: Szary Gdańsk
+      url: /projekty/szary-gdansk/
+      weight: 3
+    - name: Koszmar
+      url: /projekty/koszmar/
+      weight: 4
+    - name: Tożsamość
+      url: /projekty/tozsamosc/
+      weight: 5

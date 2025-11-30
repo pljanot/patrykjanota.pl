@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div class="outside">
+    <div class="page-content">
+        <div class="projects-menu">
+            <h5>PROJEKTY</h5>
+            <ul>
+                {{ range .Site.Menus.projects }}
+                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                {{ end }}
+            </ul>
+        </div>
+
+        <div class="project-description">
+            {{ .Content }}
+        </div>
+
+        <div class="gallery">
+            {{ range .Params.images }}
+            <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}
