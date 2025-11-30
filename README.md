@@ -16,4 +16,4 @@ hugo
 * build and start server using different baseUrl=>localhost:1313
 ```bash
 hugo server -D --baseURL="http://localhost:1313/"
-```e
+```
