@@ -120,7 +120,10 @@ ul {
 
 .page-content {
     display: grid;
-    grid-template-columns: 1fr min(30%, 384px) min(44%, 563px) calc(50% - min(44%, 563px));
+    grid-template-columns: 20% 30% 44%;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 .projects-menu,
@@ -130,8 +133,7 @@ ul {
 }
 
 .projects-menu {
-    justify-self: center;
-    padding-right: 0;
+    justify-self: end;
 }
 
 .projects-menu h5 {
@@ -196,7 +198,6 @@ ul {
 
     .projects-menu {
         justify-self: stretch;
-        padding-right: 10px;
     }
 
     .projects-menu h5,
