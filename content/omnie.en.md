@@ -25,12 +25,12 @@ Graduate of Szkoła Karola, the photography school run by Karol Krukowski. Parti
 13. OMF – **Otwarte Mistrzostwa Fotograficzne** (Open Photography Championships) – **honourable mention**, participation in the post-competition exhibition – 2019 ([link][10])
 
 [1]: https://kulturasuszec.pl/wyniki-ogolnopolskiego-konkursu-moje-male-i-duze-mikropodroze/
-[2]: https://karolofotografii.pl/festiwal/
-[3]: https://bok.bialystok.pl/wydarzenia/wydarzenie/sposoby-widzenia-2/
+[2]: https://web.archive.org/web/20221202065821/https://karolofotografii.pl/festiwal/
+[3]: https://web.archive.org/web/20220928200555/https://bok.bialystok.pl/wydarzenia/wydarzenie/sposoby-widzenia-2/
 [4]: https://katowice.wyborcza.pl/katowice/5,35063,27865729.html?i=3
 [5]: https://kulturasuszec.pl/ogolnopolski-konkurs-fotograficzny-moje-male-i-duze-mikropodroze/
 [6]: https://kolosy.pl/fotoglob2020
 [7]: https://kulturasuszec.pl/konkurs-fotograficzny-male-i-duze-mikro-podroze/
 [8]: https://www.legendamorska.pl/aktualnosci/aktualnosc/item/konkurs_legenda_morska_w_obiektywie_wernisaz_konkursu_oraz_wystawa_pokonkursowa/nocache.html
 [9]: https://kolosy.pl/fotoglob2019
-[10]: https://omf.mok.olsztyn.pl/wyniki-omf-2019/
+[10]: https://web.archive.org/web/20191214005059/https://omf.mok.olsztyn.pl/wyniki-omf-2019/
