@@ -120,7 +120,7 @@ ul {
 
 .page-content {
     display: grid;
-    grid-template-columns: 25.253% 30.035% 44.376%;
+    grid-template-columns: 20% 30% 44%;
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
@@ -133,7 +133,7 @@ ul {
 }
 
 .projects-menu {
-    margin-left: 150px;
+    justify-self: center;
 }
 
 .projects-menu h5 {
@@ -171,7 +171,7 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin: 5px 45px 0 0;
+    margin-top: 5px;
 }
 
 .gallery img {
@@ -196,9 +196,8 @@ ul {
         grid-template-columns: 1fr;
     }
 
-    .projects-menu,
-    .gallery {
-        margin: 0;
+    .projects-menu {
+        justify-self: stretch;
     }
 
     .projects-menu h5,
