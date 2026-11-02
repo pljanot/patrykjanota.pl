@@ -1,36 +1,44 @@
-languageCode: pl-PL
 title: Patryk Janota
 disableKinds: [taxonomy, term, section]
-
-params:
-  description: portfolio of photography projects
+defaultContentLanguage: pl
 
 markup:
   goldmark:
     renderer:
       unsafe: true
 
-menu:
-  main:
-    - name: O mnie
-      url: /omnie/
-      weight: 1
-    - name: Kontakt
-      url: /kontakt/
-      weight: 2
-  projects:
-    - name: 5 sekund
-      url: /projekty/5-sekund/
-      weight: 1
-    - name: Biała Kartka
-      url: /projekty/inwersja/
-      weight: 2
-    - name: Szary Gdańsk
-      url: /projekty/szary-gdansk/
-      weight: 3
-    - name: Koszmar
-      url: /projekty/koszmar/
-      weight: 4
-    - name: Tożsamość
-      url: /projekty/tozsamosc/
-      weight: 5
+languages:
+  pl:
+    weight: 1
+    params:
+      description: Portfolio projektów fotograficznych
+      projects: PROJEKTY
+    menu:
+      main:
+        - {name: O mnie, pageRef: /omnie, weight: 1}
+        - {name: Kontakt, pageRef: /kontakt, weight: 2}
+      projects:
+        - {name: 5 sekund, pageRef: /projekty/5-sekund, weight: 1}
+        - {name: Biała Kartka, pageRef: /projekty/inwersja, weight: 2}
+        - {name: Szary Gdańsk, pageRef: /projekty/szary-gdansk, weight: 3}
+        - {name: Koszmar, pageRef: /projekty/koszmar, weight: 4}
+        - {name: Tożsamość, pageRef: /projekty/tozsamosc, weight: 5}
+  en:
+    weight: 2
+    params:
+      description: Portfolio of photography projects
+      projects: PROJECTS
+    menu:
+      main:
+        - {name: About, pageRef: /omnie, weight: 1}
+        - {name: Contact, pageRef: /kontakt, weight: 2}
+      projects:
+        - {name: 5 seconds, pageRef: /projekty/5-sekund, weight: 1}
+        - {name: Blank Sheet, pageRef: /projekty/inwersja, weight: 2}
+        - {name: Grey Gdańsk, pageRef: /projekty/szary-gdansk, weight: 3}
+        - {name: Nightmare, pageRef: /projekty/koszmar, weight: 4}
+        - {name: Identity, pageRef: /projekty/tozsamosc, weight: 5}
+
+caches:
+  images:
+    dir: :cacheDir/images

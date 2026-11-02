@@ -1,24 +1,31 @@
 {{ define "main" }}
-<div class="outside">
-    <div class="page-content">
-        <div class="projects-menu">
-            <h5>PROJEKTY</h5>
-            <ul>
-                {{ range .Site.Menus.projects }}
-                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-                {{ end }}
-            </ul>
-        </div>
-
-        <div class="project-description">
-            {{ .Content }}
-        </div>
-
-        <div class="gallery">
-            {{ range .Params.images }}
-            <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+<div class="page-content">
+    <div class="projects-menu">
+        <h5>{{ .Site.Params.projects }}</h5>
+        <ul>
+            {{ range .Site.Menus.projects }}
+            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
             {{ end }}
-        </div>
+        </ul>
+    </div>
+
+    <div class="project-description">
+        {{ .Content }}
+    </div>
+
+    <div class="gallery">
+        {{ $images := .Params.images }}
+        {{ range .Translations }}{{ if not $images }}{{ $images = .Params.images }}{{ end }}{{ end }}
+        {{ range $i, $src := $images }}
+        {{ with resources.Get $src }}
+        {{ $s := .Resize "640x webp q95 photo Lanczos" }}
+        {{ $l := .Resize (printf "%dx webp q95 photo Lanczos" .Width) }}
+        {{ if gt (len $l.Content) (len .Content) }}{{ $l = . }}{{ end }}
+        <img src="{{ $l.RelPermalink }}" srcset="{{ $s.RelPermalink }} 640w, {{ $l.RelPermalink }} {{ $l.Width }}w" sizes="(max-width: 991px) 100vw, (max-width: 1280px) 40vw, 503px" width="{{ $l.Width }}" height="{{ $l.Height }}" alt="{{ $.Title }}" {{ if $i }}loading="lazy"{{ else }}fetchpriority="high"{{ end }}>
+        {{ else }}
+        {{ errorf "%s: image %q not found in assets/" $.File.Path $src }}
+        {{ end }}
+        {{ end }}
     </div>
 </div>
 {{ end }}

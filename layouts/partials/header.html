@@ -1,12 +1,15 @@
 <header class="site-header">
     <div class="header-inner">
         <div class="site-title">
-            <a href="/">{{ .Site.Title }}</a>
+            <a href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a>
         </div>
         <nav class="site-navigation">
             <ul>
                 {{ range .Site.Menus.main }}
                 <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                {{ end }}
+                {{ range .Translations }}
+                <li><a href="{{ .RelPermalink }}" hreflang="{{ .Lang }}">{{ upper .Lang }}</a></li>
                 {{ end }}
             </ul>
         </nav>
