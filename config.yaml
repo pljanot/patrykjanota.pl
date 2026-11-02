@@ -1,4 +1,3 @@
-baseURL: https://www.patrykjanota.pl/
 languageCode: pl-PL
 title: Patryk Janota
 disableKinds: [taxonomy, term, section]
