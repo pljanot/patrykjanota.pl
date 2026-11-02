@@ -133,7 +133,7 @@ ul {
 }
 
 .projects-menu {
-    justify-self: center;
+    justify-self: end;
 }
 
 .projects-menu h5 {
